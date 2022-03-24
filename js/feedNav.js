@@ -29,3 +29,18 @@ Rocca_Data.forEach( function(item, i) {
   listItem.appendChild(button);
   ulMenu.appendChild(listItem);
 });
+
+// scroll part
+
+const
+  scroll = document.getElementById("scroll"),
+  inner  = document.getElementById("inner-scroll")
+;
+scroll.addEventListener("mouseenter", function() {
+  inner.style.height = "432px";
+  console.log("pop");
+});
+scroll.addEventListener("mouseleave", function() {
+  inner.style.height = "0";
+  console.log('bang');
+});
