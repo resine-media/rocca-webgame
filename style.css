@@ -1,0 +1,85 @@
+/* set some defaults */
+
+html, body { height: 100%;}
+body, h1, h2 {margin: 0;}
+
+h1, h2 {text-align: center;}
+
+/* main wrappers */
+
+header { height: 8%; background: lightyellow; }
+main   { height: 92%; background: lightgrey; display: flex;}
+
+ul, li {margin: 0; padding: 0;}
+
+nav#menu_app { height: 100%; display: flex; justify-content: space-between;}
+nav#menu_POI { height: 100%; width: 23.33%; }
+div#map      { height: 100%; width: 76.66%;}
+div#scene {
+  position: fixed;
+  margin-left: 23.33%;
+  height: 100%;
+  width: 76.66%;
+  background: lightgrey;
+  display: none;
+}
+#scene iframe {width: 100%; height: 100%;}
+
+/* other elements and tiny bits */
+
+button { height: 100%; width: 15%; display: inline;}
+
+#menu_POI button { width: 100%; }
+
+h2 { 
+  width: 100%; 
+  height: 2em; 
+  background: lightyellow; 
+  border-radius: 0 0 50px 50px;
+  border: solid 1px grey;
+  box-shadow: 0 2px 10px 0 black;
+  margin-bottom: 2em;
+}
+
+#pi-list li {
+ display: block;
+
+ width: 100%;
+ height: 25px;
+
+ background: lightyellow;
+ border-radius: 10px;
+
+ margin: 10px 0 10px 0;
+}
+#pi-list li button { text-decoration: none;  padding: 5px; padding-left: 15px; }
+
+/* map overlays */
+
+.marker {width:0; height:0;}
+.marker  span {
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ box-sizing:border-box;
+ width:  30px;
+ height: 30px;
+ color:#fff;
+ background: #f26d51;
+ border:solid 2px;
+ border-radius: 0 70% 70%;
+ box-shadow:0 0 2px #000;
+ cursor: pointer;
+ transform-origin:0 0;
+ transform: rotateZ(-135deg);
+ font-size: 1.5em;
+}
+.marker b { transform: rotateZ(135deg) }
+
+.mapboxgl-popup {
+ max-width: 200px;
+}
+.mapboxgl-popup-content {
+ text-align: center;
+ font-family: 'Open Sans', sans-serif;
+}

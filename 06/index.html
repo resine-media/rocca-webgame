@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <style>
+  </style>
+  <script type="text/javascript">
+    function removeVid() {
+      document.getElementById("intro").remove();
+      document.querySelector("main").style.display = "block";
+    }
+    //function(e){e.target.remove()}
+  </script>
+</head>
+<body>
+  <video id="intro" src="rendu-boureau.mp4" width="753" height="470" autoplay="true" onended="removeVid()"></video>
+  <main style="display:none;">
+    <img src="bg.png">
+    <img src="burro.png" height="350" style="position: absolute;left: 340px;top: 100px;" onclick="fire()">
+    <img src="flame.png" height="150" style="position: fixed;top: 150px;left: 625px;">
+    <img src="cage.png" height="350"  style="position: absolute; top: 80px; left: 90px;">
+  </main>
+  <script type="text/javascript">
+    function fire() {
+      alert("youpi !");
+    }
+
+  </script -->
+</body>
+</html>

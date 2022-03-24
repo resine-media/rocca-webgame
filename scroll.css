@@ -1,0 +1,24 @@
+  #scroll, #scroll::before, #scroll::after {
+  	width: 397px;
+  }
+  #scroll {
+  	display: flex;
+  	flex-direction: column;
+  }
+  #scroll::before {
+  	content: "";
+  	height: 81px;
+  	background-image: url("img/top-scroll.png");
+  }
+  #inner-scroll { 
+  	height: 0;
+  	transition: height 5s;
+  	background-image: url("img/inn-scroll.png");
+  }
+  #scroll::after {
+  	content: "";
+  	position: relative;
+  	top: -23px;
+  	height: 67px;
+  	background-image: url("img/bot-scroll.png");
+  }
