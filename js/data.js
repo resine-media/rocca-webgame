@@ -11,24 +11,26 @@ bounds = [
 Rocca_Data = [
   { title: "place du marche",     loc: [6.465301, 43.538439 ] },
   { title: "porte aurenge",       loc: [6.46469 , 43.538741 ] },
-  { title: "Eglise ST michel",    loc: [6.465057, 43.539110  ] },
+  { title: "Eglise ST michel",    loc: [6.465095, 43.539032 ] },
   { title: "Maison Medievale",    loc: [6.465089, 43.539938 ] },
-  { title: "portaiguieres",       loc: [6.465524, 43.540734 ] },
-  { title: "Maison du bourreau",  loc: [6.466337, 43.540160  ] },
+  { title: "portaiguieres",       loc: [6.465518, 43.540743 ] },
+  { title: "Maison du bourreau",  loc: [6.466337, 43.540160 ] },
   { title: "Tour de l'horloge",   loc: [6.466382, 43.539936 ] },
   { title: "chapelle st sauveur", loc: [6.466473, 43.539515 ] },
   { title: "jardin Beatrice de provence", loc: [6.466063, 43.539256 ] },
-  { title: "porte rommaine",      loc: [6.466310, 43.538809 ] },
+  { title: "porte rommaine",      loc: [6.466318, 43.538822] },
 ],
 
 // ce tableau sert juste a tracer la ligne entre les POI
 Rocca_Path = [
   Rocca_Data[0].loc, // POI 1
+  [6.464835, 43.538614],
   Rocca_Data[1].loc, // POI 2
   [6.464348, 43.538968],
   [6.464353, 43.539283],
   [6.464653, 43.539277],
   Rocca_Data[2].loc, // POI 3
+  [6.465073, 43.539201],
   [6.465176, 43.53931 ],
   [6.464801, 43.53954 ],
   Rocca_Data[3].loc, // POI 4
@@ -43,13 +45,15 @@ Rocca_Path = [
   [ 6.465453, 43.539962],
   [ 6.465579, 43.539826],
   [ 6.46575, 43.539958],
-  [ 6.465928, 43.540238],
+  [ 6.465763, 43.540039],
   [ 6.466239, 43.540413],
   [ 6.466392, 43.540409],
   Rocca_Data[5].loc, // POI  6
   Rocca_Data[6].loc, // POI  7
   Rocca_Data[7].loc, // POI  8
   Rocca_Data[8].loc, // POI  9
+  [ 6.466076, 43.539032],
+  [ 6.466173, 43.538958],
   Rocca_Data[9].loc  // POI 10
 ];
 
